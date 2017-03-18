@@ -10,7 +10,9 @@ sbt new lloydmeta/seed-scala.g8
 
 ## Includes
 
-- Basic integration tests
+- Sensible compiler options
+- Basic directory structure
 - Scalatest
 - Scalafmt
-- Coursier
+- Wartremover
+- Coursier (for dependencies)
