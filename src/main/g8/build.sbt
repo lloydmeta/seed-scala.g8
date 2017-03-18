@@ -26,3 +26,5 @@ scalacOptions ++= Seq(
   "-Ywarn-value-discard",
   "-Xfuture"
 )
+
+wartremoverErrors ++= Warts.unsafe
