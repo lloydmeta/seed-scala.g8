@@ -17,7 +17,7 @@ object AutomateScalafmtPlugin extends AutoPlugin {
             },
             sourceDirectories.in(scalafmtInc) := Seq(scalaSource.value),
             scalafmtInc := {
-              val cache = streams.value.cacheDirectory / "scalafmt"
+              val cache   = streams.value.cacheDirectory / "scalafmt"
               val include = includeFilter.in(scalafmtInc).value
               val exclude = excludeFilter.in(scalafmtInc).value
               val sources =
@@ -29,8 +29,8 @@ object AutomateScalafmtPlugin extends AutoPlugin {
                   .toSet
 
               def format(handler: Set[File] => Unit, msg: String) = {
-                def update(handler: Set[File] => Unit, msg: String)(
-                  in: ChangeReport[File], out: ChangeReport[File]) = {
+                def update(handler: Set[File] => Unit, msg: String)(in: ChangeReport[File],
+                                                                    out: ChangeReport[File]) = {
                   val label = Reference.display(thisProjectRef.value)
                   val files = in.modified -- in.removed
                   Analysis
@@ -40,8 +40,8 @@ object AutomateScalafmtPlugin extends AutoPlugin {
                   files
                 }
 
-                FileFunction.cached(cache)(FilesInfo.hash,
-                  FilesInfo.exists)(update(handler, msg))(sources)
+                FileFunction.cached(cache)(FilesInfo.hash, FilesInfo.exists)(update(handler, msg))(
+                  sources)
               }
 
               def formattingHandler(files: Set[File]) =
