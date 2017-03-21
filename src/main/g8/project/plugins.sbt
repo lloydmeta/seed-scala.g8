@@ -1,3 +1,3 @@
-addSbtPlugin("com.geirsson"    % "sbt-scalafmt" % "$scalafmt_version$")
-addSbtPlugin("io.get-coursier" % "sbt-coursier" % "$coursier_version$")
-addSbtPlugin("org.wartremover" % "sbt-wartremover" % "$wartremover_version$")
+addSbtPlugin("com.geirsson"    % "sbt-scalafmt" % "0.6.6")
+addSbtPlugin("io.get-coursier" % "sbt-coursier" % "1.0.0-M15-5")
+addSbtPlugin("org.wartremover" % "sbt-wartremover" % "2.0.2")
