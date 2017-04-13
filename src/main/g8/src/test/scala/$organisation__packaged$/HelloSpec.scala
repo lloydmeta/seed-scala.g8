@@ -1,4 +1,4 @@
-package $organisation;format="lower,word"$
+package $organisation;format="lower"$
 
 import org.scalatest.{FunSpec, Matchers}
 
