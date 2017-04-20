@@ -6,7 +6,7 @@ jdk:
   - oraclejdk8
 
 scala:
-  - 2.12.1
+  - 2.12.2
 
 script:
   - sbt new file://${TRAVIS_BUILD_DIR} --name=scala-skeleton
