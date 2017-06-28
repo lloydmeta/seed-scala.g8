@@ -28,3 +28,5 @@ scalacOptions ++= Seq(
 )
 
 wartremoverErrors in (Compile, compile) ++= Warts.unsafe
+
+scalafmtOnCompile := true
