@@ -11,18 +11,18 @@ object Main {
    * # Example
    *
    * {{{
-   * scala> Main.doctested(true)
+   * scala> Main.not(true)
    * res0: Boolean = false
    *
    * // Multiline
-   * scala> Main.doctested(
+   * scala> Main.not(
    *      |  false
    *      | )
    * res1: Boolean = true
    *
    * // Property testing
-   * prop> (b: Boolean) => Main.doctested(b) == !b
+   * prop> (b: Boolean) => Main.not(b) == !b
    * }}}
    */
-  def doctested(b: Boolean): Boolean = !b
+  def not(b: Boolean): Boolean = !b
 }
