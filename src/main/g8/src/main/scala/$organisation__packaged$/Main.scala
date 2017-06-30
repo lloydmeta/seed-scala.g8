@@ -19,10 +19,6 @@ object Main {
    *      |  false
    *      | )
    * res1: Boolean = true
-   *
-   * // Property testing
-   * prop> (b: Boolean) => Main.not(b) == !b
-   * }}}
    */
   def not(b: Boolean): Boolean = !b
 }
