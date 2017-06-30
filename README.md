@@ -13,6 +13,7 @@ sbt new lloydmeta/seed-scala.g8
 - Sensible compiler options
 - Basic directory structure
 - Scalatest
+- DocTest
 - Scalafmt
 - Wartremover
 - Coursier (for dependencies)
