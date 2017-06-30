@@ -13,6 +13,15 @@ object Main {
    * {{{
    * scala> Main.doctested(true)
    * res0: Boolean = false
+   *
+   * // Multiline
+   * scala> Main.doctested(
+   *      |  false
+   *      | )
+   * res1: Boolean = true
+   *
+   * // Property testing
+   * prop> (b: Boolean) => Main.doctested(b) == !b
    * }}}
    */
   def doctested(b: Boolean): Boolean = !b
