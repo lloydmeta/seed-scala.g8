@@ -29,7 +29,6 @@ scalacOptions ++= Seq(
 )
 
 // Doctest setup
-doctestWithDependencies := false
 doctestTestFramework := DoctestTestFramework.ScalaTest
 
 wartremoverErrors in (Compile, compile) ++= Warts.unsafe
