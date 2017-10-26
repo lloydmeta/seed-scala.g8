@@ -4,7 +4,7 @@ version := "$version$"
 
 organization := "$organisation$"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "$scalatest_version$" % Test,
